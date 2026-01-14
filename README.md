@@ -31,6 +31,10 @@ DB_USER=postgres
 DB_PASSWORD=postgres
 ```
 
-4. Запуск через Docker compose
+4. Собрать .jar при помощи Maven 
+
+```mvn clean package -DskipTests```
+
+5. Запуск через Docker compose
 
 ```docker compose up -d --build```
