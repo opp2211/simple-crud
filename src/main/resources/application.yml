@@ -11,3 +11,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+
+api:
+  server:
+    url: http://maltsev.fun
