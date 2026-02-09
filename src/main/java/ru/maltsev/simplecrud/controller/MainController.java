@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.Instant;
-import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,7 +17,7 @@ public class MainController {
         Map<String, String> result = new HashMap<>();
         result.put("status", "OK");
         result.put("service", "simple-crud");
-        result.put("timestamp", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(Instant.now()));
+        result.put("timestamp", Instant.now().toString());
         return result;
     }
 }
