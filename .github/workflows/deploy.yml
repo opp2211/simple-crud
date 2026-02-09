@@ -24,7 +24,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ~/simple-crud
+            cd ~/simple_crud_app
             git pull origin master
             docker compose down || true
             docker compose up -d --build
